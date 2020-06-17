@@ -57,6 +57,14 @@ class Hero:
          return: total_block:Int
       '''
       # TODO: This method should run the block method on each armor in self.armors
+      
+    def add_weapon(self, weapon):
+        '''Add weapon to self.abilities'''
+        # TODO: This method will append the weapon object passed in as an
+        # argument to self.abilities.
+        # This means that self.abilities will be a list of
+        # abilities and weapons.
+        pass
 
     def take_damage(self, damage):
       '''Updates self.current_health to reflect the damage minus the defense.

@@ -24,6 +24,8 @@ class Hero:
         # when a hero is created, their current health is
         # always the same as their starting health (no damage taken yet!)
         self.current_health = starting_health
+        self.deaths = 0
+        self.kills = 0
 
     def add_ability(self, ability):
         ''' Add ability to abilities list '''
@@ -58,6 +60,14 @@ class Hero:
       '''
       # TODO: This method should run the block method on each armor in self.armors
 
+    def add_weapon(self, weapon):
+        '''Add weapon to self.abilities'''
+        # TODO: This method will append the weapon object passed in as an
+        # argument to self.abilities.
+        # This means that self.abilities will be a list of
+        # abilities and weapons.
+        pass
+
     def take_damage(self, damage):
       '''Updates self.current_health to reflect the damage minus the defense.
       '''
@@ -74,6 +84,15 @@ class Hero:
       # and are therefore alive, so return True
       pass
 
+    def add_kill(self, num_kills):
+        ''' Update self.kills by num_kills amount'''
+        self.kills += num_kills
+
+    def add_death(self, num_deaths):
+        ''' Update deaths with num_deaths'''
+        # TODO: This method should add the number of deaths to self.deaths
+        pass
+
     def fight(self, opponent):
       ''' Current Hero will take turns fighting the opponent hero passed in.
       '''
@@ -85,6 +104,7 @@ class Hero:
       # 3) After each attack, check if either the hero (self) or the opponent is alive
       # 4) if one of them has died, print "HeroName won!" replacing HeroName with the name of the hero, and end the fight loop
       pass
+
 
 if __name__ == "__main__":
     # If you run this file from the terminal
