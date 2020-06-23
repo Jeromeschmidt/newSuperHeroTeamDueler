@@ -1,12 +1,14 @@
+import random
+
 class Hero:
     # We want our hero to have a default "starting_health",
     # so we can set that in the function header.
     def __init__(self, name, starting_health=100):
-      '''Instance properties:
+        '''Instance properties:
           name: String
           starting_health: Integer
           current_health: Integer
-      '''
+        '''
         # we know the name of our hero, so we assign it here
         self.name = name
         # similarly, our starting health is passed in, just like name
@@ -22,7 +24,7 @@ class Hero:
       # TODO: Fight each hero until a victor emerges.
       # Phases to implement:
       #1) randomly choose winner
-      winner = random.choice(self, opponent)
+      winner = random.choice([self, opponent])
       print(str(winner.name) + " has won!")
 
 if __name__ == "__main__":
