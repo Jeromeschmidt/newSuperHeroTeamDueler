@@ -17,7 +17,6 @@ class Hero:
         # always the same as their starting health (no damage taken yet!)
         self.current_health = starting_health
 
-
     def fight(self, opponent):
       ''' Current Hero will take turns fighting the opponent hero passed in.
       '''
