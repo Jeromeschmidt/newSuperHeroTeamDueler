@@ -1,11 +1,11 @@
 ---
-title: Build Ability and Hero Classes
-slug: build-ability-and-hero-classes
+title: Build Hero Class
+slug: build-hero-class
 ---
 
 > [action]
 >
-> Let's use what we've learned to build a couple classes in a file named `superheroes.py`. Create that file right now. **Unless otherwise specified, you will be using this file to write the code for the remainder of this tutorial!**
+> Let's use what we've learned to build the hero class in a file named `hero.py`. Create that file right now. **Not all of the code for this tutorial will be contained in this file!**
 
 Before we get started, it's important to know how we will build out this file:
 
